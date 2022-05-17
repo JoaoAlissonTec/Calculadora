@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="CalcFunction.js"></script>
+    <link rel="stylesheet" href="StyleCalc.css">
+    <title>Calculadora</title>
+</head>
+<body>
+    <section>
+    <form action="" id="Calculadora">
+        <div id="CalcContainer">
+            <div id="result"></div>
+            <div id="primeiraL">
+                <input type="button" value="7" id="botao" onclick="tecla('7')">
+                <input type="button" value="8" id="botao" onclick="tecla('8')">
+                <input type="button" value="9" id="botao" onclick="tecla('9')">
+                <input type="button" value="÷" id="botao" onclick="tecla('/')">
+            </div>
+            <div id="segundaL">
+                <input type="button" value="4" id="botao" onclick="tecla('4')">
+                <input type="button" value="5" id="botao" onclick="tecla('5')">
+                <input type="button" value="6" id="botao" onclick="tecla('6')">
+                <input type="button" value="+" id="botao" onclick="tecla('+')">
+            </div>
+            <div id="terceiraL">
+                <input type="button" value="1" id="botao" onclick="tecla('1')">
+                <input type="button" value="2" id="botao" onclick="tecla('2')">
+                <input type="button" value="3" id="botao" onclick="tecla('3')">
+                <input type="button" value="-" id="botao" onclick="tecla('-')">
+            </div>
+            <div id="quartaL">
+                <input type="button" value="Ce" id="botao" onclick="resetar()">
+                <input type="button" value="0" id="botao" onclick="tecla('0')">
+                <input type="button" value="," id="botao" onclick="tecla('.')">
+                <input type="button" value="x" id="botao" onclick="tecla('*')">
+            </div>
+            <div id="quintaL">
+                <input type="button" value="=" id="botaoU" onclick="calcular()">
+                <input type="button" value="&larr;" id="botaoW" onclick="apagar()">
+            </div>
+        </div>
+    </form>
+    </section>
+</body>
+</html>
